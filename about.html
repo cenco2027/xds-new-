@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - XDS Bicycles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Inter:wght@300;400;500&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/design-tokens.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/components/about-hero-section.css">
+    <link rel="stylesheet" href="css/components/about-stat-card.css">
+    <link rel="stylesheet" href="css/components/about-stats-section.css">
+    <link rel="stylesheet" href="css/components/about-image-text-block.css">
+    <link rel="stylesheet" href="css/components/contact-form.css">
+    <link rel="stylesheet" href="css/components/submit-modal.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <!-- Desktop Navigation -->
+        <div class="navbar-desktop">
+            <div class="navbar-container">
+                <div class="navbar-inner">
+                    <a href="index.html" class="navbar-logo-link">
+                        <img src="assets/images/logo-white.png" alt="XDS Logo" class="navbar-logo">
+                    </a>
+                    <div class="navbar-menu-wrapper">
+                        <div class="navbar-menu">
+                            <a href="bicycles.html" class="navbar-menu-item" data-section="bicycles">Bicycles</a>
+                            <a href="technology.html" class="navbar-menu-item" data-section="technology">Our Technology</a>
+                            <a href="about.html" class="navbar-menu-item active" data-section="about">About Us</a>
+                            <a href="contact.html" class="navbar-menu-item" data-section="contact">Contact</a>
+                        </div>
+                        <a href="https://form.typeform.com/to/Q2P1XMRa" target="_blank" rel="noopener noreferrer" class="navbar-dealer-button">Become a Dealer</a>
+                    </div>
+                </div>
+                <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <!-- Tablet Navigation Menu (Expanded) -->
+                <div class="navbar-tablet-menu" id="navbar-tablet-menu">
+                    <div class="navbar-tablet-menu-items">
+                        <a href="index.html" class="navbar-tablet-item" data-section="home">Home</a>
+                        <a href="bicycles.html" class="navbar-tablet-item" data-section="bicycles">Bicycles</a>
+                        <a href="about.html" class="navbar-tablet-item active" data-section="about">About Us</a>
+                        <a href="technology.html" class="navbar-tablet-item" data-section="technology">Our Technology</a>
+                        <a href="contact.html" class="navbar-tablet-item" data-section="contact">Contact Us</a>
+                    </div>
+                    <div class="navbar-tablet-indicator" id="navbar-tablet-indicator"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="navbar-mobile" id="navbar-mobile">
+            <div class="navbar-mobile-header">
+                <a href="index.html" class="navbar-logo-link-mobile">
+                    <img src="assets/images/logo-white.png" alt="XDS Logo" class="navbar-logo-mobile">
+                </a>
+                <button class="navbar-close" id="navbar-close" aria-label="Close menu">
+                    <svg class="close-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="navbar-mobile-menu">
+                <a href="index.html" class="navbar-mobile-item" data-section="home">Home</a>
+                <a href="bicycles.html" class="navbar-mobile-item" data-section="bicycles">Bicycles</a>
+                <a href="technology.html" class="navbar-mobile-item" data-section="technology">Our Technology</a>
+                <a href="about.html" class="navbar-mobile-item active" data-section="about">About Us</a>
+                <a href="contact.html" class="navbar-mobile-item" data-section="contact">Contact Us</a>
+            </div>
+            <div class="navbar-mobile-indicators">
+                <div class="navbar-indicator navbar-indicator-left"></div>
+                <div class="navbar-indicator navbar-indicator-right"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Hero Section -->
+    <section class="about-hero-section">
+      <div class="about-hero-background-wrapper">
+        <img src="assets/images/about/hero/hero-bg-desktop.png" alt="XDS About Us Background" class="about-hero-background about-hero-background-desktop">
+        <img src="assets/images/about/hero/hero-bg-desktop.png" alt="XDS About Us Background" class="about-hero-background about-hero-background-tablet">
+        <img src="assets/images/about/hero/hero-bg-desktop.png" alt="XDS About Us Background" class="about-hero-background about-hero-background-mobile">
+        <div class="about-hero-overlay"></div>
+      </div>
+      <div class="about-hero-content">
+        <div class="about-hero-text-group">
+          <h1 class="about-hero-title">Our Story</h1>
+          <p class="about-hero-description">
+            XDS designs, engineers, and manufactures bicycles at global scale—with over 8 million bikes produced annually in our vertically integrated facilities. Every frame, weld, and assembly is built in-house, using advanced automation and precision testing to ensure consistency, performance, and long-term value.<br><br>
+            From Olympic athletes to daily commuters, our bikes are trusted by riders around the world—because we don't just build for volume. We build for quality, efficiency, and the ride itself.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="about-stats-section">
+      <div class="stats-container">
+        <div class="stats-row stats-row-1">
+          <div class="about-stat-card">
+            <div class="stat-card-icon">
+              <img src="assets/images/about/stats/icon-distributors.svg" alt="" class="stat-icon-image" aria-hidden="true">
+            </div>
+            <div class="stat-card-content">
+              <div class="stat-card-number">190</div>
+              <div class="stat-card-label">Distributors</div>
+            </div>
+          </div>
+          <div class="about-stat-card">
+            <div class="stat-card-icon">
+              <img src="assets/images/about/stats/icon-bike-sales.svg" alt="" class="stat-icon-image" aria-hidden="true">
+            </div>
+            <div class="stat-card-content">
+              <div class="stat-card-number">8M</div>
+              <div class="stat-card-label">Annual Bike Sales</div>
+            </div>
+          </div>
+          <div class="about-stat-card">
+            <div class="stat-card-icon">
+              <img src="assets/images/about/stats/icon-retail-stores.svg" alt="" class="stat-icon-image" aria-hidden="true">
+            </div>
+            <div class="stat-card-content">
+              <div class="stat-card-number">3k+</div>
+              <div class="stat-card-label">Retail Stores</div>
+            </div>
+          </div>
+        </div>
+        <div class="stats-row stats-row-2">
+          <div class="about-stat-card">
+            <div class="stat-card-icon">
+              <img src="assets/images/about/stats/icon-employees.svg" alt="" class="stat-icon-image" aria-hidden="true">
+            </div>
+            <div class="stat-card-content">
+              <div class="stat-card-number">14k+</div>
+              <div class="stat-card-label">Employees</div>
+            </div>
+          </div>
+          <div class="about-stat-card">
+            <div class="stat-card-icon">
+              <img src="assets/images/about/stats/icon-countries.svg" alt="" class="stat-icon-image" aria-hidden="true">
+            </div>
+            <div class="stat-card-content">
+              <div class="stat-card-number">50</div>
+              <div class="stat-card-label">Countries</div>
+            </div>
+          </div>
+          <div class="about-stat-card">
+            <div class="stat-card-icon">
+              <img src="assets/images/about/stats/icon-factories.svg" alt="" class="stat-icon-image" aria-hidden="true">
+            </div>
+            <div class="stat-card-content">
+              <div class="stat-card-number">5</div>
+              <div class="stat-card-label">Global Factories</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image + Text Block 1: Beyond Quality Control -->
+    <section class="about-image-text-block">
+      <div class="image-text-container">
+        <div class="image-block">
+          <img src="assets/images/about/blocks/image-1-desktop.png" alt="Beyond Quality Control" class="block-image block-image-desktop">
+          <img src="assets/images/about/blocks/image-1-tablet.png" alt="Beyond Quality Control" class="block-image block-image-tablet">
+          <img src="assets/images/about/blocks/image-1-mobile.png" alt="Beyond Quality Control" class="block-image block-image-mobile">
+        </div>
+        <div class="text-block">
+          <div class="text-block-content">
+            <h2 class="block-title">Beyond Quality Control</h2>
+            <p class="block-description">
+              At XDS, we've spent three decades refining how bicycles are built by controlling every step of the process, from carbon layup to final torque check. While many brands rely on third parties, we've kept production under one roof to ensure consistency and quality at every stage.<br><br>
+              This approach allows us to fine-tune geometry, optimize materials, and deliver bikes that perform across categories and price points. It's how we bring together performance, value, and scale in a way that works for both riders and retailers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image + Text Block 2: Riders and Retailers First -->
+    <section class="about-image-text-block">
+      <div class="image-text-container">
+        <div class="image-block">
+          <img src="assets/images/about/blocks/image-2-desktop.png" alt="Riders and Retailers First" class="block-image block-image-desktop">
+          <img src="assets/images/about/blocks/image-2-tablet.png" alt="Riders and Retailers First" class="block-image block-image-tablet">
+          <img src="assets/images/about/blocks/image-2-mobile.png" alt="Riders and Retailers First" class="block-image block-image-mobile">
+        </div>
+        <div class="text-block">
+          <div class="text-block-content">
+            <h2 class="block-title">Riders and Retailers First</h2>
+            <p class="block-description">
+              We believe the future of cycling will be shaped by those who build smarter, support retailers, and put riders first. That's what we've done for over 30 years, and it's what we're bringing to every market we enter.<br><br>
+              Whether you're a shop owner looking for a better partner or a rider looking for a better bike, XDS is built for you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" id="contact">
+        <div class="contact-form-container">
+            <!-- Form Content -->
+            <div class="contact-form-content">
+                <img src="assets/images/logo-white.png" alt="XDS Logo" class="contact-form-logo">
+                <div class="contact-form-text-group">
+                    <h2 class="contact-form-title">Be the first to know about product launches</h2>
+                    <p class="contact-form-description">Enter your email and someone from the team will be in touch</p>
+                </div>
+                
+                <form class="contact-email-form" id="contact-email-form" novalidate>
+                    <div class="email-form-wrapper">
+                        <input 
+                            type="email" 
+                            class="email-form-input" 
+                            id="email-input"
+                            placeholder="Enter email" 
+                            required
+                            aria-label="Enter your email address"
+                        >
+                        <button type="submit" class="email-form-submit" id="email-submit-btn" aria-label="Submit email">
+                            <span class="email-submit-text">Submit</span>
+                            <svg class="email-submit-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="email-form-error" id="email-form-error" role="alert" aria-live="polite"></div>
+                </form>
+            </div>
+
+            <!-- Footer Content -->
+            <div class="contact-form-footer">
+                <!-- Social Media Icons -->
+                <div class="contact-social-icons" id="contact-social-icons">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Facebook">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M43.3125 22C43.3125 10.2266 33.7734 0.6875 22 0.6875C10.2266 0.6875 0.6875 10.2266 0.6875 22C0.6875 32.6373 8.48117 41.4545 18.6699 43.0547V28.1609H13.2559V22H18.6699V17.3044C18.6699 11.9634 21.8496 9.01312 26.7197 9.01312C29.052 9.01312 31.4909 9.42906 31.4909 9.42906V14.6713H28.8028C26.1559 14.6713 25.3301 16.3144 25.3301 17.9996V22H31.2409L30.2955 28.1609H25.3301V43.0547C35.5188 41.4545 43.3125 32.6373 43.3125 22Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram">
+                        <svg width="39" height="44" viewBox="104 0 39 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M123.509 12.1166C117.972 12.1166 113.506 16.5252 113.506 21.9908C113.506 27.4564 117.972 31.865 123.509 31.865C129.045 31.865 133.511 27.4564 133.511 21.9908C133.511 16.5252 129.045 12.1166 123.509 12.1166ZM123.509 28.4104C119.931 28.4104 117.006 25.5314 117.006 21.9908C117.006 18.4502 119.922 15.5713 123.509 15.5713C127.095 15.5713 130.012 18.4502 130.012 21.9908C130.012 25.5314 127.087 28.4104 123.509 28.4104ZM136.254 11.7127C136.254 12.9932 135.209 14.0158 133.92 14.0158C132.623 14.0158 131.587 12.9846 131.587 11.7127C131.587 10.4408 132.632 9.40957 133.92 9.40957C135.209 9.40957 136.254 10.4408 136.254 11.7127ZM142.878 14.0502C142.73 10.965 142.016 8.23223 139.727 5.98066C137.446 3.7291 134.678 3.02441 131.553 2.86973C128.332 2.68926 118.677 2.68926 115.456 2.86973C112.34 3.01582 109.572 3.72051 107.282 5.97207C104.993 8.22363 104.287 10.9564 104.131 14.0416C103.948 17.2213 103.948 26.7518 104.131 29.9314C104.279 33.0166 104.993 35.7494 107.282 38.001C109.572 40.2525 112.331 40.9572 115.456 41.1119C118.677 41.2924 128.332 41.2924 131.553 41.1119C134.678 40.9658 137.446 40.2611 139.727 38.001C142.008 35.7494 142.722 33.0166 142.878 29.9314C143.061 26.7518 143.061 17.2299 142.878 14.0502ZM138.717 33.3432C138.038 35.0275 136.724 36.3252 135.009 37.0041C132.441 38.0096 126.347 37.7775 123.509 37.7775C120.671 37.7775 114.568 38.001 112.009 37.0041C110.303 36.3338 108.988 35.0361 108.301 33.3432C107.282 30.808 107.517 24.7924 107.517 21.9908C107.517 19.1893 107.291 13.165 108.301 10.6385C108.98 8.9541 110.294 7.65645 112.009 6.97754C114.577 5.97207 120.671 6.2041 123.509 6.2041C126.347 6.2041 132.449 5.98066 135.009 6.97754C136.715 7.64785 138.029 8.94551 138.717 10.6385C139.736 13.1736 139.501 19.1893 139.501 21.9908C139.501 24.7924 139.736 30.8166 138.717 33.3432Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="YouTube">
+                        <svg width="50" height="44" viewBox="204 0 50 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M250.713 10.6634C250.168 8.63096 248.562 7.03029 246.522 6.48708C242.825 5.5 228 5.5 228 5.5C228 5.5 213.175 5.5 209.478 6.48708C207.439 7.03038 205.832 8.63096 205.287 10.6634C204.296 14.3473 204.296 22.0333 204.296 22.0333C204.296 22.0333 204.296 29.7194 205.287 33.4033C205.832 35.4357 207.439 36.9697 209.478 37.5129C213.175 38.5 228 38.5 228 38.5C228 38.5 242.825 38.5 246.522 37.5129C248.562 36.9697 250.168 35.4357 250.713 33.4033C251.704 29.7194 251.704 22.0333 251.704 22.0333C251.704 22.0333 251.704 14.3473 250.713 10.6634ZM223.152 29.0117V15.055L235.542 22.0335L223.152 29.0117Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="TikTok">
+                        <svg width="44" height="44" viewBox="313 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M357 22C357 34.1501 347.15 44 335 44C322.85 44 313 34.1501 313 22C313 9.84986 322.85 0 335 0C347.15 0 357 9.84986 357 22ZM340.167 8.83539H335.743L335.637 8.94156V27.4145C335.637 27.8657 335.056 28.9303 334.752 29.2901C332.779 31.6257 328.866 30.7027 328.167 27.733C327.468 24.7633 330.146 22.407 333.015 23.1324V18.6381C332.971 18.5673 332.918 18.5466 332.838 18.5319C330.686 18.1574 328.025 19.1099 326.401 20.5166C322.301 24.0614 322.652 30.6024 327.12 33.6665C332.446 37.3174 339.524 33.8523 340.164 27.556V17.6826L342.051 18.7324C343.431 19.3458 344.944 19.685 346.466 19.6614V15.1316C343.021 15.1847 340.161 12.2651 340.167 8.83244V8.83539Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <!-- Divider Line -->
+                <div class="contact-form-divider"></div>
+                
+                <!-- Contact Information -->
+                <div class="contact-form-info">
+                    <a href="mailto:hello@xds.co" class="contact-info-link contact-email-default">hello@xds.co</a>
+                    <a href="tel:949-817-2115" class="contact-info-link">949-817-2115</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submit Modal -->
+    <div class="submit-modal-overlay" id="submit-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="submit-modal-title">
+        <div class="submit-modal-container" id="submit-modal-container">
+            <button class="submit-modal-close" id="submit-modal-close" aria-label="Close modal">
+                <svg class="modal-close-icon" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L15 17M15 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            
+            <div class="submit-modal-content">
+                <div class="modal-header">
+                    <p class="modal-label">Newsletter</p>
+                    <h2 class="modal-title" id="submit-modal-title">Be the first to know about product launches</h2>
+                </div>
+                
+                <div class="modal-form-section">
+                    <div class="modal-form-group">
+                        <label for="modal-email-input" class="modal-email-label">Enter email</label>
+                        <div class="modal-email-line"></div>
+                    </div>
+                </div>
+                
+                <button class="modal-submit-button" id="modal-submit-button">
+                    <span class="modal-submit-text">Submit</span>
+                    <svg class="modal-submit-icon" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.91 0L22.91 7L15.91 14" stroke="currentColor" stroke-width="2"/>
+                        <line x1="0" y1="7" x2="22.91" y2="7" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/components/navbar.js"></script>
+    <script src="js/components/contact-form.js"></script>
+    <script src="js/components/submit-modal.js"></script>
+</body>
+</html>
+

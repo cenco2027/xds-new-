@@ -1,0 +1,234 @@
+/* About Us Hero Section Component Styles */
+
+.about-hero-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-hero-background-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.about-hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1728px;
+  margin: 0 auto;
+}
+
+.about-hero-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.about-hero-title {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+  color: var(--color-text-1);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.about-hero-description {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-sub-h6);
+  line-height: var(--line-height-sub-h6);
+  color: var(--color-text-1);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+/* Desktop (1728px+) */
+@media (min-width: 1728px) {
+  .about-hero-section {
+    height: 1183px;
+  }
+  
+  .about-hero-background-desktop {
+    display: block;
+  }
+  
+  .about-hero-content {
+    padding: 389px 164px;
+  }
+  
+  .about-hero-text-group {
+    gap: 32px;
+  }
+  
+  .about-hero-title {
+    font-size: 96px;
+    line-height: 1em;
+  }
+  
+  .about-hero-description {
+    font-size: 32px;
+    line-height: 1.25em;
+  }
+}
+
+/* Desktop Transition (1025px - 1727px) */
+@media (min-width: 1025px) and (max-width: 1727px) {
+  .about-hero-section {
+    height: auto;
+    min-height: 800px;
+  }
+  
+  .about-hero-background-desktop {
+    display: block;
+  }
+  
+  .about-hero-content {
+    padding: clamp(235px, 25vw, 389px) clamp(96px, 10vw, 164px);
+  }
+  
+  .about-hero-title {
+    font-size: clamp(64px, 5vw, 96px);
+  }
+  
+  .about-hero-description {
+    font-size: clamp(24px, 2vw, 32px);
+  }
+}
+
+/* Tablet (1024px) */
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .about-hero-section {
+    height: 891px;
+  }
+  
+  .about-hero-background-tablet {
+    display: block;
+  }
+  
+  .about-hero-content {
+    padding: 235px 96px;
+    max-width: 1024px;
+  }
+  
+  .about-hero-text-group {
+    gap: 40px;
+  }
+  
+  .about-hero-title {
+    font-size: 64px;
+    line-height: 0.9901961088180542em;
+  }
+  
+  .about-hero-description {
+    font-size: 24px;
+    line-height: 1.302em;
+  }
+}
+
+/* Tablet Transition (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-hero-section {
+    height: auto;
+    min-height: 600px;
+  }
+  
+  .about-hero-background-tablet {
+    display: block;
+  }
+  
+  .about-hero-content {
+    padding: clamp(150px, 25vw, 235px) clamp(60px, 8vw, 96px);
+  }
+  
+  .about-hero-title {
+    font-size: clamp(40px, 6vw, 64px);
+  }
+  
+  .about-hero-description {
+    font-size: clamp(18px, 2vw, 24px);
+  }
+}
+
+/* Mobile (below 768px) */
+@media (max-width: 767px) {
+  .about-hero-section {
+    height: 420px;
+  }
+  
+  .about-hero-background-mobile {
+    display: block;
+  }
+  
+  .about-hero-content {
+    padding: 68px 42px;
+    max-width: 100%;
+  }
+  
+  .about-hero-text-group {
+    gap: 16px;
+    width: 290px;
+  }
+  
+  .about-hero-title {
+    font-size: 24px;
+    line-height: 0.9673202832539877em;
+  }
+  
+  .about-hero-description {
+    font-size: 14px;
+    line-height: 1.226020676749093em;
+  }
+}
+
+/* Small Mobile (below 375px) */
+@media (max-width: 375px) {
+  .about-hero-content {
+    padding: 60px 35px;
+  }
+  
+  .about-hero-text-group {
+    width: 100%;
+  }
+  
+  .about-hero-title {
+    font-size: 20px;
+  }
+  
+  .about-hero-description {
+    font-size: 12px;
+  }
+}
+
+
+

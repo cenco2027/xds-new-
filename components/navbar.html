@@ -1,0 +1,64 @@
+<!-- Navigation Bar Component -->
+<nav class="navbar" id="navbar">
+    <!-- Desktop Navigation -->
+    <div class="navbar-desktop">
+        <div class="navbar-container">
+            <div class="navbar-inner">
+                <a href="index.html" class="navbar-logo-link">
+                    <img src="assets/images/logo-white.png" alt="XDS Logo" class="navbar-logo">
+                </a>
+                <div class="navbar-menu-wrapper">
+                    <div class="navbar-menu">
+                        <a href="bicycles.html" class="navbar-menu-item" data-section="bicycles">Bicycles</a>
+                        <a href="technology.html" class="navbar-menu-item" data-section="technology">Our Technology</a>
+                        <a href="about.html" class="navbar-menu-item" data-section="about">About Us</a>
+                        <a href="contact.html" class="navbar-menu-item" data-section="contact">Contact</a>
+                    </div>
+                    <button class="navbar-dealer-button">Become a Dealer</button>
+                </div>
+            </div>
+            <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Tablet Navigation Menu (Expanded) -->
+    <div class="navbar-tablet-menu" id="navbar-tablet-menu">
+        <div class="navbar-tablet-menu-items">
+            <a href="index.html" class="navbar-tablet-item" data-section="home">Home</a>
+            <a href="bicycles.html" class="navbar-tablet-item" data-section="bicycles">Bicycles</a>
+            <a href="about.html" class="navbar-tablet-item" data-section="about">About Us</a>
+            <a href="technology.html" class="navbar-tablet-item" data-section="technology">Our Technology</a>
+            <a href="contact.html" class="navbar-tablet-item" data-section="contact">Contact Us</a>
+        </div>
+        <div class="navbar-tablet-indicator" id="navbar-tablet-indicator"></div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="navbar-mobile" id="navbar-mobile">
+        <div class="navbar-mobile-header">
+            <a href="index.html" class="navbar-logo-link-mobile">
+                <img src="assets/images/logo-white.png" alt="XDS Logo" class="navbar-logo-mobile">
+            </a>
+            <button class="navbar-close" id="navbar-close" aria-label="Close menu">
+                <svg class="close-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="navbar-mobile-menu">
+            <a href="index.html" class="navbar-mobile-item" data-section="home">Home</a>
+            <a href="bicycles.html" class="navbar-mobile-item" data-section="bicycles">Bicycles</a>
+            <a href="technology.html" class="navbar-mobile-item" data-section="technology">Our Technology</a>
+            <a href="about.html" class="navbar-mobile-item" data-section="about">About Us</a>
+            <a href="contact.html" class="navbar-mobile-item" data-section="contact">Contact Us</a>
+        </div>
+        <div class="navbar-mobile-indicators">
+            <div class="navbar-indicator navbar-indicator-left"></div>
+            <div class="navbar-indicator navbar-indicator-right"></div>
+        </div>
+    </div>
+</nav>

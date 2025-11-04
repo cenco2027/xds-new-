@@ -1,0 +1,292 @@
+/* Design Tokens - XDS Website */
+
+:root {
+  /* Colors */
+  --color-bg-black-1: #23262B;
+  --color-bg-white-1: #FFFFFF;
+  --color-text-1: #F4F6F6;
+  --color-text-2: #9C9C9C;
+  --color-header-shade-1: #000000;
+  --color-contact-card: #23262B;
+  --color-base-neutral-0: #FFFFFF;
+  --color-base-neutral-300: rgba(0, 0, 0, 0.2);
+  --color-base-neutral-300-alt: #A6B6B6;
+  --color-base-neutral-900: #131717;
+  --color-card-bg: rgba(22, 22, 22, 0.5); /* card 6 */
+  
+  /* Typography */
+  --font-family-primary: 'DM Sans', sans-serif;
+  --font-family-secondary: 'Inter', sans-serif;
+  --font-family-tertiary: 'Montserrat', sans-serif;
+  
+  /* Font Sizes */
+  --font-size-h1: 96px;
+  --font-size-h2: 64px;
+  --font-size-h3: 24px;
+  --font-size-sub-h1-1: 80px;
+  --font-size-sub-h2: 40px;
+  --font-size-sub-h2-1: 40px;
+  --font-size-sub-h3: 28px;
+  --font-size-sub-h5: 20px;
+  --font-size-sub-h6: 32px;
+  --font-size-sub-h7: 20px;
+  --font-size-sub-h8: 36px;
+  --font-size-sub-h9: 24px;
+  --font-size-body-3: 32px;
+  --font-size-body-4: 15px;
+  --font-size-body-5: 20px;
+  --font-size-body-6: 14px;
+  --font-size-body-7: 14px;
+  --font-size-body-9: 28px;
+  --font-size-footer-1: 14px;
+  --font-size-email-label: 15px;
+  --font-size-email-text: 20px;
+  --font-size-filter-tab-desktop: 32px;
+  --font-size-filter-tab-tablet: 24px;
+  --font-size-filter-tab-mobile: 14px;
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  
+  /* Line Heights */
+  --line-height-h1: 1em;
+  --line-height-h2: 0.9901961088180542em;
+  --line-height-h3: 0.9673202832539877em;
+  --line-height-sub-h1-1: 1.302em;
+  --line-height-sub-h2: 1.302em;
+  --line-height-sub-h3: 1.302em;
+  --line-height-sub-h5: 1.302em;
+  --line-height-sub-h6: 1.25em;
+  --line-height-sub-h7: 1.302em;
+  --line-height-sub-h8: 1.302em;
+  --line-height-sub-h9: 1.302em;
+  --line-height-body-3: 1.25em;
+  --line-height-body-4: 1.2102272033691406em;
+  --line-height-body-5: 1.25em;
+  --line-height-body-6: 1.3581171035766602em;
+  --line-height-body-7: 1.226020676749093em;
+  --line-height-body-9: 1.4285714285714286em;
+  --line-height-footer-1: 1.302em;
+  --line-height-email-label: 1.218999989827474em;
+  --line-height-email-text: 1.2102272033691406em;
+  
+  /* Spacing */
+  --spacing-xs: 7px;
+  --spacing-sm: 9px;
+  --spacing-md: 10px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 45px;
+  --spacing-4xl: 51px;
+  --spacing-5xl: 60px;
+  --spacing-6xl: 83px;
+  --spacing-7xl: 89px;
+  --spacing-8xl: 158px;
+  --spacing-9xl: 164px;
+  --spacing-10xl: 165px;
+  --spacing-11xl: 367px;
+  --spacing-12xl: 481px;
+  
+  /* Hero Section Spacing */
+  --hero-padding-desktop-x: 174px;
+  --hero-padding-desktop-y: 504px;
+  --hero-padding-tablet-x: 106px;
+  --hero-padding-tablet-y: 270px;
+  --hero-padding-mobile-x: 52px;
+  --hero-padding-mobile-y: 147px;
+  
+  /* Filter Tabs Spacing */
+  --filter-container-padding-desktop: 64px 34px;
+  --filter-container-padding-tablet: 59px 33px;
+  --filter-container-padding-mobile: 30px 10px;
+  --filter-tab-gap-desktop: 23px;
+  --filter-tab-gap-tablet: 76px;
+  --filter-tab-gap-mobile: 20.28px;
+  --filter-tab-padding-desktop: 12px 80px;
+  --filter-tab-padding-tablet: 12px 80px;
+  --filter-tab-padding-mobile: 13.12px 35.31px;
+  
+  /* Product Card Spacing */
+  --product-card-gap-desktop: 30px;
+  --product-card-gap-tablet: 17px;
+  --product-card-gap-mobile: 10px;
+  --product-card-padding-desktop-first: 60px 85px 60px 130px;
+  --product-card-padding-desktop: 60px 130px;
+  --product-card-padding-tablet: 34.65px 49.08px;
+  --product-card-padding-mobile: 25px 20px;
+  --product-card-content-gap-desktop: 79px;
+  --product-card-content-gap-tablet: 45.62px;
+  --product-card-content-gap-mobile: 19px;
+  --product-card-text-gap-desktop: 30px;
+  --product-card-text-gap-tablet: 17.32px;
+  --product-card-text-gap-mobile: 12px;
+  
+  /* Border Radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 5px;
+  --border-radius-lg: 10px;
+  --border-radius-filter-tab: 8px;
+  --border-radius-filter-tab-mobile: 5px;
+  --border-radius-product-card-desktop: 30px;
+  --border-radius-product-card-tablet: 5.77px;
+  --border-radius-product-card-mobile: 10px;
+  
+  /* Border Width */
+  --border-width-1: 1px;
+  --border-width-2: 2px;
+  --border-width-3: 3px;
+  --border-width-filter-tab: 2px;
+  --border-width-filter-tab-mobile: 0.5px;
+  
+  /* Shadows */
+  --shadow-text: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --shadow-text-tablet: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  
+  /* Effects */
+  --blur-backdrop: blur(4px);
+  --blur-backdrop-mobile: blur(20px);
+  
+  /* Layout Dimensions */
+  --max-width-container: 1728px;
+  --max-width-container-tablet: 1024px;
+  --max-width-container-mobile: 375px;
+  --header-height: 80px;
+  --header-height-tablet: 77px;
+  --header-height-mobile: 84px;
+  --nav-item-gap: 33px;
+  
+  /* Hero Dimensions */
+  --hero-height-desktop: 1183px;
+  --hero-height-tablet: 726px;
+  --hero-height-mobile: 373px;
+  --hero-content-width-desktop: 1400px;
+  
+  /* Filter Tabs Dimensions */
+  --filter-container-width-desktop: 1634px;
+  --filter-container-width-tablet: 831px;
+  --filter-container-width-mobile: 331px;
+  --filter-tab-width-desktop: 300px;
+  --filter-tab-width-tablet: 200px;
+  --filter-tab-width-mobile: 102px;
+  --filter-tab-height-desktop: 68px;
+  --filter-tab-height-tablet: 50px;
+  --filter-tab-height-mobile: 34px;
+  
+  /* Product Card Dimensions */
+  --product-card-container-width-desktop: 1660px;
+  --product-card-container-width-tablet: 958px;
+  --product-card-container-width-mobile: 354px;
+  --product-card-height-desktop: 692px;
+  --product-card-height-tablet-first: 330.3px;
+  --product-card-height-tablet: 399.36px;
+  --product-card-height-mobile: 385px;
+  
+  /* Breakpoints */
+  --breakpoint-mobile: 768px;
+  --breakpoint-tablet: 1024px;
+  --breakpoint-desktop: 1440px;
+  --breakpoint-large: 1728px;
+  
+  /* Overlay Colors */
+  --overlay-dark-desktop: rgba(0, 0, 0, 0.4);
+  --overlay-dark-tablet: rgba(0, 0, 0, 0.3);
+  --overlay-dark-mobile: rgba(0, 0, 0, 0.3);
+  
+  /* Gradient */
+  --gradient-hero-overlay: linear-gradient(180deg, rgba(61, 73, 73, 0) 0%, rgba(15, 15, 15, 1) 100%);
+  
+  /* Technology Page - Colors */
+  --color-technology-card-light: #D9D9D9;
+  --color-technology-card-dark: #131717;
+  
+  /* Technology Page - Hero Section */
+  --technology-hero-padding-desktop: 481px 164px;
+  --technology-hero-padding-tablet: 291px 479px;
+  --technology-hero-padding-mobile: 0px;
+  --technology-hero-height-desktop: 1179px;
+  --technology-hero-height-tablet: 774px;
+  --technology-hero-height-mobile: 322px;
+  --technology-hero-title-size-desktop: 96px;
+  --technology-hero-title-size-tablet: 64px;
+  --technology-hero-title-size-mobile: 24px;
+  --technology-hero-subtitle-size-desktop: 40px;
+  --technology-hero-subtitle-size-tablet: 24px;
+  --technology-hero-subtitle-size-mobile: 14px;
+  --technology-hero-text-gap-desktop: 12px;
+  --technology-hero-text-gap-tablet: 4px;
+  --technology-hero-text-gap-mobile: 10px;
+  --technology-hero-bg-offset-tablet: -400px;
+  --technology-hero-bg-offset-mobile: -173px;
+  
+  /* Technology Page - Introduction Section */
+  --technology-intro-padding-desktop: 158px 165px;
+  --technology-intro-padding-tablet: 67px 97px;
+  --technology-intro-padding-mobile: 0px 35px;
+  --technology-intro-height-desktop: 728px;
+  --technology-intro-height-mobile: 356px;
+  --technology-intro-font-size-desktop: 32px;
+  --technology-intro-font-size-tablet: 20px;
+  --technology-intro-font-size-mobile: 15px;
+  
+  /* Technology Page - Card Section */
+  --technology-card-gap-desktop: 20px;
+  --technology-card-gap-tablet: 10px;
+  --technology-card-gap-mobile: 10px;
+  --technology-card-padding-1-desktop: 262px 68px;
+  --technology-card-padding-1-tablet: 153px 39px;
+  --technology-card-padding-1-mobile: 109px 28px;
+  --technology-card-padding-2-desktop: 262px 68px;
+  --technology-card-padding-2-tablet: 150px 39px;
+  --technology-card-padding-2-mobile: 150px 39px;
+  --technology-card-padding-3-desktop: 262px 68px;
+  --technology-card-padding-3-tablet: 150px 39px;
+  --technology-card-padding-3-mobile: 108px 28px;
+  --technology-card-content-gap-desktop: 40px;
+  --technology-card-content-gap-tablet: 23px;
+  --technology-card-content-gap-mobile: 16px;
+  --technology-card-title-size-desktop: 48px;
+  --technology-card-title-size-tablet: 28px;
+  --technology-card-title-size-mobile: 20px;
+  --technology-card-text-size-desktop: 24px;
+  --technology-card-text-size-tablet: 15px;
+  --technology-card-text-size-mobile: 14px;
+  --technology-card-image-height-desktop: 846px;
+  --technology-card-image-height-tablet: 495px;
+  --technology-card-image-size-mobile: 363px 323px;
+  --technology-card-border-radius-desktop: 10px;
+  --technology-card-border-radius-tablet: 5.75px;
+  --technology-card-border-radius-mobile: 5px;
+  --technology-card-border-radius-3-mobile: 4.12px;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  :root {
+    --font-size-h1: 48px;
+    --font-size-h2: 48px;
+    --font-size-h3: 24px;
+    --font-size-sub-h1-1: 40px;
+    --font-size-sub-h2: 28px;
+    --font-size-sub-h2-1: 28px;
+    --font-size-sub-h6: 24px;
+    --font-size-body-3: 24px;
+    --font-size-body-9: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  :root {
+    --font-size-h1: 64px;
+    --font-size-h2: 64px;
+    --font-size-sub-h1-1: 56px;
+    --font-size-sub-h2: 32px;
+    --font-size-sub-h2-1: 32px;
+  }
+}
+
+
+

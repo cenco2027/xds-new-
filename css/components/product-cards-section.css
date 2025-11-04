@@ -1,0 +1,100 @@
+/* Product Cards Section Container Styles */
+
+.product-cards-section {
+  width: 100%;
+  background-color: var(--color-bg-black-1);
+  padding: 0;
+}
+
+.product-cards-container {
+  width: 100%;
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--product-card-gap-desktop);
+  padding: var(--filter-container-padding-desktop);
+}
+
+/* No Products Message */
+.no-products-message {
+  display: none;
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--color-text-1);
+}
+
+.no-products-text {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-bold);
+  margin: 0 0 16px 0;
+  color: var(--color-text-1);
+}
+
+.no-products-hint {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body-5);
+  font-weight: var(--font-weight-light);
+  margin: 0;
+  color: var(--color-text-2);
+}
+
+/* Desktop (1728px+) */
+@media (min-width: 1728px) {
+  .product-cards-container {
+    width: var(--product-card-container-width-desktop);
+    max-width: var(--product-card-container-width-desktop);
+    gap: var(--product-card-gap-desktop);
+    padding: 64px 34px;
+  }
+}
+
+/* Desktop Transition (1025px - 1727px) */
+@media (min-width: 1025px) and (max-width: 1727px) {
+  .product-cards-container {
+    width: 100%;
+    max-width: var(--product-card-container-width-desktop);
+    gap: clamp(20px, 2vw, var(--product-card-gap-desktop));
+    padding: clamp(40px, 4vw, 64px) clamp(20px, 2vw, 34px);
+  }
+}
+
+/* Tablet (1024px) */
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .product-cards-container {
+    width: var(--product-card-container-width-tablet);
+    max-width: var(--product-card-container-width-tablet);
+    gap: var(--product-card-gap-tablet);
+    padding: 59px 33px;
+  }
+}
+
+/* Tablet Transition (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .product-cards-container {
+    width: 100%;
+    max-width: var(--product-card-container-width-tablet);
+    gap: clamp(12px, 1.5vw, var(--product-card-gap-tablet));
+    padding: var(--filter-container-padding-tablet);
+  }
+}
+
+/* Mobile (below 768px) - Based on Figma designs */
+@media (max-width: 768px) {
+  .product-cards-container {
+    width: 100%;
+    max-width: 375px; /* From Figma */
+    gap: 10px; /* From Figma */
+    padding: 30px 10px; /* From Figma */
+  }
+}
+
+/* Small Mobile (below 375px) */
+@media (max-width: 375px) {
+  .product-cards-container {
+    width: 100%;
+    padding: 25px 15px;
+  }
+}
+

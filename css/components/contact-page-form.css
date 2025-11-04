@@ -1,0 +1,327 @@
+/* Contact Page Form Styles */
+
+.contact-page-form-section {
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+}
+
+.contact-page-form-container {
+    width: 100%;
+    max-width: 1392px;
+    margin: 0 auto;
+    padding: 0 168px;
+}
+
+.contact-page-form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 736px;
+    max-width: 100%;
+    align-self: flex-start;
+}
+
+/* Form Row for First Name and Last Name */
+.form-row {
+    display: flex;
+    gap: 68px;
+    width: 100%;
+}
+
+.form-row-names {
+    align-items: flex-start;
+}
+
+.form-row-names .form-field {
+    flex: 0 0 auto;
+    width: 346px;
+}
+
+/* Form Field */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.form-field:has(.form-select-wrapper) {
+    width: 100%;
+}
+
+.form-label {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-light);
+    font-size: 20px;
+    line-height: 1.302em;
+    color: var(--color-base-neutral-0);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.required {
+    color: var(--color-base-neutral-0);
+}
+
+/* Form Input */
+.form-input {
+    width: 100%;
+    height: 44px;
+    padding: 9px 12px;
+    background-color: rgba(234, 234, 234, 0.75);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-family-primary);
+    font-size: 16px;
+    color: var(--color-base-neutral-900);
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    background-color: rgba(234, 234, 234, 0.9);
+}
+
+.form-input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.form-input-email {
+    /* Same as form-input */
+}
+
+/* Select Dropdown Wrapper */
+.form-select-wrapper {
+    position: relative;
+    width: 100%;
+    height: 44px;
+}
+
+.form-select {
+    width: 100%;
+    height: 44px;
+    padding: 9px 12px;
+    padding-right: 40px;
+    background-color: rgba(234, 234, 234, 0.75);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-family-primary);
+    font-size: 16px;
+    color: var(--color-base-neutral-900);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.form-select:focus {
+    outline: none;
+    background-color: rgba(234, 234, 234, 0.9);
+}
+
+.form-select option {
+    background-color: var(--color-base-neutral-0);
+    color: var(--color-base-neutral-900);
+}
+
+.select-arrow {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+    color: var(--color-base-neutral-900);
+}
+
+/* Submit Button */
+.form-submit-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0;
+}
+
+.contact-submit-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 270px;
+    height: 70px;
+    padding: 15px 35px;
+    background-color: transparent;
+    border: 3px solid var(--color-bg-white-1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.contact-submit-button:hover {
+    background-color: var(--color-bg-white-1);
+}
+
+.contact-submit-button:hover .submit-button-text {
+    color: var(--color-bg-black-1);
+}
+
+.contact-submit-button:hover .submit-button-icon {
+    color: var(--color-bg-black-1);
+}
+
+.submit-button-text {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-light);
+    font-size: var(--font-size-body-3);
+    line-height: 1.25em;
+    color: var(--color-text-1);
+    white-space: nowrap;
+}
+
+.submit-button-icon {
+    width: 22.91px;
+    height: 14px;
+    flex-shrink: 0;
+    color: var(--color-text-1);
+    transition: color 0.3s ease;
+}
+
+/* Error Message */
+.form-error {
+    display: none;
+    color: #ff4444;
+    font-family: var(--font-family-primary);
+    font-size: 14px;
+    margin-top: -16px;
+}
+
+.form-error.active {
+    display: block;
+}
+
+/* Field Error Styles */
+.form-input.error,
+.form-select.error {
+    border-color: #ff4444;
+    background-color: rgba(255, 68, 68, 0.1);
+}
+
+.field-error {
+    color: #ff4444;
+    font-family: var(--font-family-primary);
+    font-size: 12px;
+    margin-top: 4px;
+    display: block;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contact-page-form {
+        width: 573px;
+        gap: 32px;
+    }
+
+    .form-row-names {
+        gap: 68px;
+    }
+
+    .form-row-names .form-field {
+        width: 250px;
+    }
+
+    .contact-submit-button {
+        width: 152px;
+        height: 52.92px;
+        gap: 17.85px;
+        border-width: 1.5px;
+        border-radius: 6.15px;
+        padding: 0;
+    }
+
+    .submit-button-text {
+        font-size: var(--font-size-body-5);
+    }
+
+    .submit-button-icon {
+        width: 13.15px;
+        height: 8.04px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .contact-page-form {
+        width: 100%;
+        max-width: 225px;
+        gap: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-row-names {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-row-names .form-field {
+        width: 100%;
+    }
+
+    .form-field {
+        gap: 5px;
+    }
+
+    .form-label {
+        font-size: var(--font-size-body-7);
+        line-height: 1.226em;
+        height: 24px;
+    }
+
+    .form-input,
+    .form-select-wrapper,
+    .form-select {
+        height: 44px;
+    }
+
+    .contact-submit-button {
+        width: 152px;
+        height: 52.92px;
+        gap: 17.85px;
+        border-width: 1.5px;
+        border-radius: 6.15px;
+        padding: 0;
+        border-color: var(--color-text-1);
+    }
+
+    .submit-button-text {
+        font-size: var(--font-size-body-5);
+        color: var(--color-bg-white-1);
+    }
+
+    .submit-button-icon {
+        width: 13.15px;
+        height: 8.04px;
+        color: var(--color-bg-white-1);
+    }
+
+    .contact-submit-button:hover .submit-button-text {
+        color: var(--color-bg-white-1);
+    }
+
+    .contact-submit-button:hover .submit-button-icon {
+        color: var(--color-bg-white-1);
+    }
+}
+
+

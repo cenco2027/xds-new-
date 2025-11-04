@@ -1,0 +1,525 @@
+/* Technology Cards Section Container */
+.technology-cards-section {
+  width: 100%;
+  max-width: 1728px; /* Exact Figma container width */
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* Figma: gap: 18px between sections */
+}
+
+@media (min-width: 1728px) {
+  .technology-cards-section {
+    padding: 0;
+    gap: 18px;
+    width: 1728px; /* Fixed width for Desktop */
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1727px) {
+  .technology-cards-section {
+    padding: 0 clamp(20px, 2vw, 100px);
+    gap: clamp(15px, 1.5vw, 18px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .technology-cards-section {
+    padding: 0;
+    max-width: var(--max-width-container-tablet);
+    gap: 6px; /* Figma tablet gap */
+  }
+}
+
+@media (max-width: 767px) {
+  .technology-cards-section {
+    padding: 0;
+    max-width: var(--max-width-container-mobile);
+    gap: 10px; /* Figma mobile gap */
+  }
+}
+
+/* Technology Card Component Styles */
+
+.technology-card {
+  width: 100%;
+  margin-bottom: 0; /* Gap handled by parent container */
+}
+
+.technology-card:last-child {
+  margin-bottom: 0;
+}
+
+.technology-card-container {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  gap: var(--technology-card-gap-desktop);
+}
+
+/* Image Wrapper */
+.technology-card-image-wrapper {
+  flex: 1 1 0; /* flex-grow: 1, flex-shrink: 1, flex-basis: 0 */
+  position: relative;
+  overflow: hidden;
+  min-width: 0; /* Allow flex item to shrink below content size */
+}
+
+.technology-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.technology-card-image-desktop {
+  display: block;
+}
+
+.technology-card-image-tablet,
+.technology-card-image-mobile {
+  display: none;
+}
+
+/* Text Wrapper */
+.technology-card-text-wrapper {
+  flex: 1 1 0; /* flex-grow: 1, flex-shrink: 1, flex-basis: 0 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--technology-card-padding-1-desktop);
+  border-radius: var(--technology-card-border-radius-desktop);
+  min-width: 0; /* Allow flex item to shrink below content size */
+}
+
+/* Variant Styles */
+.technology-card[data-variant="light"] .technology-card-text-wrapper {
+  background-color: var(--color-technology-card-light);
+}
+
+.technology-card[data-variant="dark"] .technology-card-text-wrapper {
+  background-color: var(--color-technology-card-dark);
+}
+
+/* Content */
+.technology-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px; /* Figma: gap: 40px (Frame 147) */
+  width: 100%;
+}
+
+.technology-card-title {
+  font-family: var(--font-family-primary);
+  font-weight: 800;
+  font-size: var(--technology-card-title-size-desktop);
+  line-height: 60px; /* Exact Figma: 60px or 125% */
+  margin: 0;
+  text-align: left;
+}
+
+.technology-card[data-variant="light"] .technology-card-title {
+  color: var(--color-bg-black-1);
+}
+
+.technology-card[data-variant="dark"] .technology-card-title {
+  color: var(--color-technology-card-light);
+}
+
+.technology-card-text {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-light);
+  font-size: var(--technology-card-text-size-desktop);
+  line-height: 31px; /* Exact Figma: 31px */
+  margin: 0;
+  text-align: left;
+}
+
+.technology-card[data-variant="light"] .technology-card-text {
+  color: var(--color-bg-black-1);
+}
+
+.technology-card[data-variant="dark"] .technology-card-text {
+  color: var(--color-technology-card-light);
+}
+
+/* Image Position - Default (right) */
+.technology-card[data-image-position="right"] .technology-card-container {
+  flex-direction: row;
+}
+
+.technology-card[data-image-position="right"] .technology-card-image-wrapper {
+  order: 2;
+}
+
+.technology-card[data-image-position="right"] .technology-card-text-wrapper {
+  order: 1;
+}
+
+/* Image Position - Left */
+.technology-card[data-image-position="left"] .technology-card-container {
+  flex-direction: row;
+}
+
+.technology-card[data-image-position="left"] .technology-card-image-wrapper {
+  order: 1;
+}
+
+.technology-card[data-image-position="left"] .technology-card-text-wrapper {
+  order: 2;
+}
+
+/* Desktop (>= 1728px) */
+@media (min-width: 1728px) {
+  .technology-card {
+    margin-bottom: 0;
+  }
+  
+  .technology-card-container {
+    gap: 20px; /* Figma: gap: 20px */
+    flex-direction: row;
+    align-items: stretch;
+    width: 1728px; /* Exact Figma container width */
+    height: 846px; /* Exact Figma container height */
+    margin: 0 auto; /* Center the container */
+    padding: 0; /* Exact Figma */
+  }
+  
+  /* Card 1 specific padding */
+  .technology-card:nth-child(1) .technology-card-text-wrapper {
+    padding: 262px 68px; /* Exact Figma values */
+  }
+  
+  /* Card 2 specific padding */
+  .technology-card:nth-child(2) .technology-card-text-wrapper {
+    padding: 262px 68px; /* Exact Figma values */
+  }
+  
+  /* Card 3 specific padding */
+  .technology-card:nth-child(3) .technology-card-text-wrapper {
+    padding: 262px 68px; /* Exact Figma values */
+  }
+  
+  .technology-card-image-wrapper {
+    flex: 1 1 0; /* flex-grow: 1, flex-shrink: 1, flex-basis: 0 */
+    height: 846px; /* Exact Figma value */
+    min-width: 0;
+  }
+  
+  .technology-card-image-desktop {
+    display: block;
+    width: 100%;
+    height: 846px; /* Exact Figma value */
+    border-radius: 10px; /* Exact Figma value */
+    object-fit: cover;
+  }
+  
+  .technology-card-image-tablet,
+  .technology-card-image-mobile {
+    display: none;
+  }
+  
+  .technology-card-content {
+    gap: 40px; /* Figma: gap: 40px (Frame 147) */
+    width: 100%;
+  }
+  
+  .technology-card-title {
+    font-size: 48px; /* Exact Figma */
+    font-weight: 800; /* Exact Figma */
+    line-height: 60px; /* Exact Figma: 60px or 125% */
+    text-align: left;
+  }
+  
+  .technology-card-text {
+    font-size: 24px; /* Exact Figma: Sub H9 */
+    font-weight: 300; /* Exact Figma */
+    line-height: 31px; /* Exact Figma: 31px */
+  }
+  
+  .technology-card-text-wrapper {
+    border-radius: 10px; /* Exact Figma value */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px; /* Figma: gap: 35px (card wrapper) */
+    flex: 1 1 0; /* flex-grow: 1, flex-shrink: 1, flex-basis: 0 */
+    height: 846px; /* Match image height */
+    min-width: 0;
+  }
+}
+
+/* Desktop (1025px - 1727px) */
+@media (min-width: 1025px) and (max-width: 1727px) {
+  .technology-card-container {
+    gap: clamp(15px, 1.5vw, 20px);
+    flex-direction: row;
+  }
+  
+  .technology-card-text-wrapper {
+    padding: clamp(150px, 15vw, 262px) clamp(40px, 4vw, 68px);
+  }
+  
+  .technology-card-image-wrapper {
+    height: clamp(600px, 50vh, 846px);
+  }
+  
+  .technology-card-image-desktop {
+    display: block;
+    height: 100%;
+    border-radius: var(--technology-card-border-radius-desktop);
+  }
+  
+  .technology-card-content {
+    gap: clamp(30px, 3vw, 40px);
+  }
+  
+  .technology-card-title {
+    font-size: clamp(32px, 3vw, 48px);
+    text-align: left;
+  }
+  
+  .technology-card-text {
+    font-size: clamp(18px, 1.5vw, 24px);
+  }
+}
+
+/* Tablet (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .technology-card {
+    margin-bottom: 0;
+  }
+  
+  .technology-card-container {
+    gap: 10px; /* Figma: gap: 10px for Card 1 & 2 */
+    flex-direction: row;
+    align-items: stretch;
+  }
+  
+  /* Card 3 has different gap */
+  .technology-card:nth-child(3) .technology-card-container {
+    gap: 11.5px; /* Figma: gap: 11.504630088806152px */
+  }
+  
+  /* Card 1 specific padding */
+  .technology-card:nth-child(1) .technology-card-text-wrapper {
+    padding: 153.3px 39.8px; /* Exact Figma: 153.2978515625px 39.7872314453125px */
+    border-radius: 5.85px; /* Exact Figma: 5.8510637283325195px */
+  }
+  
+  /* Card 2 specific padding */
+  .technology-card:nth-child(2) .technology-card-text-wrapper {
+    padding: 150.7px 39.1px; /* Exact Figma: 150.7106475830078px 39.11574172973633px */
+    border-radius: 5.75px; /* Exact Figma: 5.752315044403076px */
+  }
+  
+  /* Card 3 specific padding */
+  .technology-card:nth-child(3) .technology-card-text-wrapper {
+    padding: 150.7px 39.1px; /* Exact Figma: 150.7106475830078px 39.11574172973633px */
+    border-radius: 5.75px; /* Exact Figma: 5.752315044403076px */
+  }
+  
+  .technology-card-image-wrapper {
+    flex: 1;
+    height: 495px; /* Exact Figma value */
+    min-width: 0;
+  }
+  
+  .technology-card-image-desktop,
+  .technology-card-image-mobile {
+    display: none;
+  }
+  
+  .technology-card-image-tablet {
+    display: block;
+    width: 100%;
+    height: 495px; /* Exact Figma value */
+    object-fit: cover;
+  }
+  
+  /* Card 1 image border radius */
+  .technology-card:nth-child(1) .technology-card-image {
+    border-radius: 5.85px; /* Exact Figma: 5.8510637283325195px */
+  }
+  
+  /* Card 2 and 3 image border radius */
+  .technology-card:nth-child(2) .technology-card-image,
+  .technology-card:nth-child(3) .technology-card-image {
+    border-radius: 5.75px; /* Exact Figma: 5.752315044403076px */
+  }
+  
+  /* Card 1 content gap */
+  .technology-card:nth-child(1) .technology-card-content {
+    gap: 23.4px; /* Exact Figma: 23.404254913330078px */
+  }
+  
+  /* Card 2 and 3 content gap */
+  .technology-card:nth-child(2) .technology-card-content,
+  .technology-card:nth-child(3) .technology-card-content {
+    gap: 23.01px; /* Exact Figma: 23.009260177612305px */
+  }
+  
+  .technology-card-title {
+    font-size: 28px; /* Exact Figma: Sub H3 */
+    font-weight: 700; /* Exact Figma */
+    line-height: 1.302em; /* Exact Figma */
+    text-align: center; /* Tablet titles are centered */
+  }
+  
+  .technology-card-text {
+    font-size: 15px; /* Exact Figma: Body 8 */
+    font-weight: 400; /* Exact Figma */
+    line-height: 1.302em; /* Exact Figma */
+    text-align: left;
+  }
+  
+  .technology-card-text-wrapper {
+    flex: 1;
+    min-width: 0;
+    height: 495px; /* Match image height for consistent layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px; /* Card 1 wrapper gap */
+  }
+  
+  /* Card 2 and 3 wrapper gap */
+  .technology-card:nth-child(2) .technology-card-text-wrapper,
+  .technology-card:nth-child(3) .technology-card-text-wrapper {
+    gap: 20.1px; /* Exact Figma: 20.133102416992188px */
+  }
+}
+
+/* Mobile (below 768px) */
+@media (max-width: 767px) {
+  .technology-card {
+    margin-bottom: 0;
+  }
+  
+  .technology-card-container {
+    gap: 10px; /* Figma: gap: 10px */
+    flex-direction: column; /* Mobile: vertical layout */
+    align-items: stretch;
+  }
+  
+  /* Mobile: Image always on top, override image-position */
+  .technology-card[data-image-position="right"] .technology-card-container,
+  .technology-card[data-image-position="left"] .technology-card-container {
+    flex-direction: column;
+  }
+  
+  .technology-card-image-wrapper {
+    order: 1 !important; /* Force image on top for mobile */
+    width: 100%;
+    height: 323px; /* Exact Figma value */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .technology-card-text-wrapper {
+    order: 2 !important; /* Force text below image for mobile */
+    width: 100%;
+  }
+  
+  /* Card 1 specific padding */
+  .technology-card:nth-child(1) .technology-card-text-wrapper {
+    padding: 109.76px 28.49px; /* Exact Figma: 109.75763702392578px 28.486717224121094px */
+    border-radius: 5px; /* Exact Figma value */
+  }
+  
+  /* Card 2 specific padding */
+  .technology-card:nth-child(2) .technology-card-text-wrapper {
+    padding: 150.71px 39.12px; /* Exact Figma: 150.7106475830078px 39.11574172973633px */
+    border-radius: 5.75px; /* Exact Figma: 5.752315044403076px */
+  }
+  
+  /* Card 3 specific padding */
+  .technology-card:nth-child(3) .technology-card-text-wrapper {
+    padding: 108.07px 28.05px; /* Exact Figma: 108.06560516357422px 28.047563552856445px */
+    border-radius: 4.12px; /* Exact Figma: 4.1246418952941895px */
+  }
+  
+  .technology-card-image-desktop,
+  .technology-card-image-tablet {
+    display: none;
+  }
+  
+  .technology-card-image-mobile {
+    display: block;
+    width: 100%;
+    max-width: 363px; /* Exact Figma value */
+    height: 323px; /* Exact Figma value */
+    object-fit: cover;
+    margin: 0 auto; /* Center the image */
+  }
+  
+  /* Card 1 image border radius */
+  .technology-card:nth-child(1) .technology-card-image {
+    border-radius: 5px; /* Exact Figma value */
+  }
+  
+  /* Card 2 image border radius */
+  .technology-card:nth-child(2) .technology-card-image {
+    border-radius: 5.75px; /* Exact Figma: 5.752315044403076px */
+  }
+  
+  /* Card 3 image border radius */
+  .technology-card:nth-child(3) .technology-card-image {
+    border-radius: 4.12px; /* Exact Figma: 4.1246418952941895px */
+  }
+  
+  /* Card 1 content gap */
+  .technology-card:nth-child(1) .technology-card-content {
+    gap: 16.76px; /* Exact Figma: 16.756893157958984px */
+  }
+  
+  /* Card 2 content gap */
+  .technology-card:nth-child(2) .technology-card-content {
+    gap: 23.01px; /* Exact Figma: 23.009260177612305px */
+  }
+  
+  /* Card 3 content gap */
+  .technology-card:nth-child(3) .technology-card-content {
+    gap: 16.5px; /* Exact Figma: 16.498567581176758px */
+  }
+  
+  .technology-card-title {
+    font-size: 20px; /* Exact Figma: Sub H5 */
+    font-weight: 700; /* Exact Figma */
+    line-height: 1.302em; /* Exact Figma */
+    text-align: left; /* Mobile: left aligned */
+  }
+  
+  .technology-card-text {
+    font-size: 14px; /* Exact Figma: Body 6 */
+    font-weight: 300; /* Exact Figma */
+    line-height: 1.358em; /* Exact Figma */
+    text-align: left;
+  }
+}
+
+/* Small Mobile (below 375px) */
+@media (max-width: 374px) {
+  .technology-card-image-mobile {
+    width: 100%;
+    max-width: 363px;
+  }
+  
+  .technology-card-text-wrapper {
+    padding: 80px 20px;
+  }
+  
+  .technology-card-title {
+    font-size: 18px;
+  }
+  
+  .technology-card-text {
+    font-size: 13px;
+  }
+}
+

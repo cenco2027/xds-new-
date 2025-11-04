@@ -1,0 +1,171 @@
+/* About Us Stat Card Component Styles */
+
+.about-stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.stat-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.stat-icon-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  fill: var(--color-text-1);
+}
+
+.stat-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px;
+  width: 100%;
+}
+
+.stat-card-number {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sub-h1-1);
+  line-height: var(--line-height-sub-h1-1);
+  color: var(--color-text-1);
+  text-align: center;
+  margin: 0;
+}
+
+.stat-card-label {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-body-9);
+  line-height: var(--line-height-body-9);
+  color: var(--color-text-1);
+  text-align: center;
+  margin: 0;
+}
+
+/* Desktop (1728px+) */
+@media (min-width: 1728px) {
+  .about-stat-card {
+    gap: 35px;
+  }
+  
+  .stat-icon-image {
+    width: auto;
+    height: auto;
+  }
+  
+  .stat-card-number {
+    font-size: 80px;
+    line-height: 1.302em;
+  }
+  
+  .stat-card-label {
+    font-size: 28px;
+    line-height: 1.4285714285714286em;
+  }
+  
+  .stat-card-content {
+    gap: 9px;
+    height: 113px;
+  }
+}
+
+/* Desktop Transition (1025px - 1727px) */
+@media (min-width: 1025px) and (max-width: 1727px) {
+  .about-stat-card {
+    gap: clamp(19px, 2vw, 35px);
+  }
+  
+  .stat-card-number {
+    font-size: clamp(44px, 4vw, 80px);
+  }
+  
+  .stat-card-label {
+    font-size: clamp(15px, 1.5vw, 28px);
+  }
+}
+
+/* Tablet (1024px) */
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .about-stat-card {
+    gap: 19.450551986694336px;
+  }
+  
+  .stat-card-number {
+    font-size: 44.45840072631836px;
+    line-height: 0.7921569027868456em;
+  }
+  
+  .stat-card-label {
+    font-size: 15.560441017150879px;
+    line-height: 1.4285713585275588em;
+  }
+  
+  .stat-card-content {
+    gap: 5.001570224761963px;
+    height: 62.8px;
+  }
+}
+
+/* Tablet Transition (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-stat-card {
+    gap: clamp(11px, 1.5vw, 19px);
+  }
+  
+  .stat-card-number {
+    font-size: clamp(24px, 3vw, 44px);
+  }
+  
+  .stat-card-label {
+    font-size: clamp(8px, 1vw, 15px);
+  }
+}
+
+/* Mobile (below 768px) */
+@media (max-width: 767px) {
+  .about-stat-card {
+    gap: 11.063921928405762px;
+  }
+  
+  .stat-card-number {
+    font-size: 24.59421730041504px;
+    line-height: 0.7921568289868519em;
+  }
+  
+  .stat-card-label {
+    font-size: 8.607975959777832px;
+    line-height: 1.428571444398516em;
+  }
+  
+  .stat-card-content {
+    gap: 5.531960964202881px;
+  }
+}
+
+/* Small Mobile (below 375px) */
+@media (max-width: 375px) {
+  .about-stat-card {
+    gap: 10px;
+  }
+  
+  .stat-card-number {
+    font-size: 20px;
+  }
+  
+  .stat-card-label {
+    font-size: 7px;
+  }
+}
+
+
+
